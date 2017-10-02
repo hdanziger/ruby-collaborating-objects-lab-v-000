@@ -21,7 +21,7 @@ class Artist
 
   def self.find(name)
     self.all.find do |artist|
-      artist.save
+      artist.name ==name
     end
   end
 
@@ -30,7 +30,6 @@ class Artist
       artist.save
     end
   end
-    
 
   def save
     @@all << self
