@@ -2,7 +2,7 @@ require 'pathname'
 class MP3Importer
 
   def initialize(path)
-    path = Pathname.new("MP3Importer.new('./db/mp3s').import")
+    Dir["MP3Importer.new('./db/mp3s').import"]
   end
 
   def files
