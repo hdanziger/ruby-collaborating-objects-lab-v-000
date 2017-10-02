@@ -1,7 +1,6 @@
 class MP3Importer
 
   def initialize(path)
-    path.absolute_path(MP3Importer.new('./db/mp3s').import)
   end
 
   def files
