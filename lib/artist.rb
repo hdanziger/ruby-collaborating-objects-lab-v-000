@@ -15,7 +15,7 @@ class Artist
     @songs << song
   end
 
-  def slef.find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     self.find(name) ? self.find(name) : self.create(name)
   end
 
@@ -25,8 +25,8 @@ class Artist
     end
   end
 
-  def save 
-    @@all << self 
+  def save
+    @@all << self
   end
 
   def print_songs
@@ -34,5 +34,5 @@ class Artist
       puts song.name
     end
   end
-      
+
 end
