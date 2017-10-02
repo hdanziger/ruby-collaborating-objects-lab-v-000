@@ -1,8 +1,9 @@
-require 'pathname'
+
 class MP3Importer
+  attr_accessor :path
 
   def initialize(path)
-    Dir["MP3Importer.new('./db/mp3s').import"]
+    @path = path
   end
 
   def files
