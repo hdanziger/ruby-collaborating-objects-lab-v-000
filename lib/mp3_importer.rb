@@ -1,7 +1,7 @@
 class MP3Importer
 
   def initialize
-    @path = path 
+    @path = path
   end
 
   def files
@@ -11,5 +11,5 @@ class MP3Importer
     list_of_filenames.each do |filename|
       Song.new_by_filename(filename)
     end
-  end 
+  end
 end
